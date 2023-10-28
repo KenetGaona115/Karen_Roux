@@ -1,33 +1,14 @@
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue, Filter } = require('firebase-admin/firestore');
-
 const serviceAccount = require('../proyectomuebles-7993d-288434c24e2f.json');
 
 initializeApp({
-  credential: cert(serviceAccount)
+    credential: cert(serviceAccount)
 });
 
 const db = getFirestore();
 const Furniture = db.collection('furniture');
-
-const COMPLETE = 200
-const ERROR = 500
-
-async function createForniture(data) {
-
-    try {
-        let doc = Furniture.doc("TEST");
-        const response = await doc.set(data);
-        console.log(response)
-
-        return COMPLETE;
-    } catch (err) {
-        console.error(err);
-        return ERROR
-    }
-
-}
-
+const Informaction = db.collection('information');
 
 async function deletePedido(id) {
     const snapshot = await collectionPedidos.doc(id).delete();
@@ -83,5 +64,6 @@ async function getAllCustomerOrders(id) {
 }
 
 module.exports = {
-    createForniture,
+    Furniture,
+    Informaction
 };
