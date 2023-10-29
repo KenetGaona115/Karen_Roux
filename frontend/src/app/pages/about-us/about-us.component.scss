@@ -1,0 +1,45 @@
+.about-us-page {
+    padding: 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-header img {
+    max-width: 100%;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-header h1 {
+    margin-top: 10px;
+}
+
+.vision-section {
+    margin-top: 5%;
+}
+
+.values-section {
+    margin-top: 5%;
+}
+.property-list {
+    /* Content is center horizontally */
+    align-items: center;
+    display: flex;
+
+    border-bottom: 1px solid #d1d5db;
+
+    /* Spacing */
+    margin: 0;
+    padding: 0.25rem 0;
+}
+.property-list__key {
+    /* Take the available width */
+    flex: 1;
+}
+.property-list__value {
+    margin-left: 0.5rem;
+}

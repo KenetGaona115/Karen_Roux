@@ -1,0 +1,27 @@
+.welcome-page {
+    background-image: url('../img/muebles-funciones-6t-t.jpg.webp');
+    /* Ruta a tu imagen de fondo */
+    background-size: cover;
+}
+
+.welcome-content {
+    text-align: center;
+    color: #704322;
+    text-shadow:
+        -1px -1px 0 #d2cbb9,
+        /* Shadow en la esquina superior izquierda */
+        1px -1px 0 #d2cbb9,
+        /* Shadow en la esquina superior derecha */
+        -1px 1px 0 #d2cbb9,
+        /* Shadow en la esquina inferior izquierda */
+        1px 1px 0 #d2cbb9;
+    padding: 20px;
+}
+
+.welcome-content h1 {
+    font-size: 3rem;
+}
+
+.welcome-content p {
+    font-size: 1.5rem;
+}
