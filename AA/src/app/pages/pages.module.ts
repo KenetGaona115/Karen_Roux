@@ -5,12 +5,15 @@ import { ButtonModule } from 'primeng/button';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FieldsetModule } from 'primeng/fieldset';
 import { DataViewModule } from 'primeng/dataview';
+import { CardModule } from 'primeng/card';
+
 @NgModule({
   imports: [
     CommonModule,
     ButtonModule,
     FieldsetModule,
-    DataViewModule
+    DataViewModule,
+    CardModule
   ],
   declarations: [
     HomeComponent,
