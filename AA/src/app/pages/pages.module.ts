@@ -6,6 +6,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { FieldsetModule } from 'primeng/fieldset';
 import { DataViewModule } from 'primeng/dataview';
 import { CardModule } from 'primeng/card';
+import { GalleriaModule } from 'primeng/galleria';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   imports: [
@@ -13,11 +15,13 @@ import { CardModule } from 'primeng/card';
     ButtonModule,
     FieldsetModule,
     DataViewModule,
-    CardModule
+    CardModule,
+    GalleriaModule
   ],
   declarations: [
     HomeComponent,
     AboutUsComponent,
+    GalleryComponent
   ]
 })
 export class PagesModule { }

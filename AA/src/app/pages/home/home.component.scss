@@ -1,7 +1,7 @@
 .welcome-page {
     background-image: url('../img/muebles-funciones-6t-t.jpg.webp');
-    /* Ruta a tu imagen de fondo */
-    background-size: cover;
+    background-size: calc(101%);
+    background-repeat: no-repeat;
 }
 
 .welcome-content {

@@ -16,23 +16,12 @@ export class NavbarComponent {
         routerLink: ['/home']
       },
       {
-        label: 'Productos',
-        icon: 'pi pi-fw pi-tags',
-        items: [
-          {
-            label: 'Todos los Productos',
-            icon: 'pi pi-fw pi-list',
-            routerLink: ['/products']
-          },
-          {
-            label: 'Añadir Producto',
-            icon: 'pi pi-fw pi-plus',
-            routerLink: ['/add-product']
-          }
-        ]
+        label: 'Galeria',
+        icon: 'pi pi-images',
+        routerLink: ['/gallery']
       },
       {
-        label: 'Acerca de nosotros',
+        label: 'Nosotros',
         icon: 'pi pi-building',
         routerLink: ['/about-us']
       },
