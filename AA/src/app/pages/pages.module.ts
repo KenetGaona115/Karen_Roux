@@ -8,7 +8,10 @@ import { DataViewModule } from 'primeng/dataview';
 import { CardModule } from 'primeng/card';
 import { GalleriaModule } from 'primeng/galleria';
 import { GalleryComponent } from './gallery/gallery.component';
-
+import { LoginComponent } from './login/login.component';
+import { PasswordModule } from 'primeng/password';
+import { InputTextModule } from 'primeng/inputtext';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [
     CommonModule,
@@ -16,12 +19,16 @@ import { GalleryComponent } from './gallery/gallery.component';
     FieldsetModule,
     DataViewModule,
     CardModule,
-    GalleriaModule
+    GalleriaModule,
+    PasswordModule,
+    InputTextModule,
+    ReactiveFormsModule
   ],
   declarations: [
     HomeComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    LoginComponent
   ]
 })
 export class PagesModule { }

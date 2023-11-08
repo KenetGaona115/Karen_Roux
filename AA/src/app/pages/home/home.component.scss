@@ -1,14 +1,21 @@
 .welcome-page {
-    background-image: url('../img/muebles-funciones-6t-t.jpg.webp');
-    background-size: calc(101%);
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/proyectomuebles-7993d.appspot.com/o/imagenes%2FR69_0580.jpg?alt=media&token=ee877cb9-4369-4abc-a6d0-e0e7271c02f9&_gl=1*hw7kyd*_ga*MzMwMjIwMzU1LjE2OTg1MTMzNTE.*_ga_CW55HF8NVT*MTY5OTQwNzAyNS42LjEuMTY5OTQwNzE0Ni40NS4wLjA.');
+    background-size: 50%;
     background-repeat: no-repeat;
+}
+
+.second-div {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/proyectomuebles-7993d.appspot.com/o/imagenes%2FR69_0651.jpg?alt=media&token=777563c5-5e59-4e92-9263-897abd2fdba9&_gl=1*1qhrjk2*_ga*MzMwMjIwMzU1LjE2OTg1MTMzNTE.*_ga_CW55HF8NVT*MTY5OTQwNzAyNS42LjEuMTY5OTQwODQ0My42MC4wLjA.');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .welcome-content {
     text-align: center;
     color: #704322;
     text-shadow:
-        -1px -1px 0 #d2cbb9,
+        4px 2px 0 #d2cbb9,
         /* Shadow en la esquina superior izquierda */
         1px -1px 0 #d2cbb9,
         /* Shadow en la esquina superior derecha */
