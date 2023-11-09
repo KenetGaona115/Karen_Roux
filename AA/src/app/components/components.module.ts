@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenubarModule } from 'primeng/menubar';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SidebarModule } from 'primeng/sidebar';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -15,11 +16,13 @@ import { SidebarModule } from 'primeng/sidebar';
   ],
   declarations: [
     NavbarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FooterComponent
   ],
   exports: [
     NavbarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FooterComponent
   ]
 })
 export class ComponentModule { }

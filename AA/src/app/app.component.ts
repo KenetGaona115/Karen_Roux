@@ -11,6 +11,6 @@ export class AppComponent {
   ngOnInit() {
     setTimeout(() => {
       this.show = true;
-    }, 2000);
+    }, 3000);
   }
 }
