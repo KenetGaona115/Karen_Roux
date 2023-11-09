@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AA';
+  show: boolean = false;
+  ngOnInit() {
+    setTimeout(() => {
+      this.show = true;
+    }, 2000);
+  }
 }
