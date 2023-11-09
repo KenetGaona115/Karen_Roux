@@ -1,12 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
-/* Puedes cambiar 'saga-blue' por otro tema */
 @import 'primeng/resources/primeng.min.css';
 @import 'primeicons/primeicons.css';
 @import 'assets/theme.css';
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('./assets/fonts/PTSans-Regular.ttf') format('truetype');
+}
 
 html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'PTSans-Regular', sans-serif !important
+}
+
+body .p-component {
+    font-family: 'PTSans-Regular', sans-serif !important
 }
