@@ -5,13 +5,18 @@
 .about-header {
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-header img {
     max-width: 100%;
-    width: 50%;
+    width: 25%;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Para mantener la proporción de aspecto original de las imágenes */
+    margin: 10px; 
 }
 
 .about-header h1 {

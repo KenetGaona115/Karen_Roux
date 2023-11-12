@@ -1,13 +1,42 @@
-<footer class="p-footer">
-  <div class="footer-content">
-    <div class="info">
-      Información adicional aquí
-    </div>
-    <div class="social-media">
-      Síguenos en:
-      <a href="https://www.instagram.com/tucuenta" target="_blank">
-        <i class="pi pi-instagram"></i>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row" style="display: flex; justify-content: space-around;">
+      <a (click)="sendSections('home')">
+        <p>Inicio</p>
       </a>
+      <a (click)="sendSections('about-us')">
+        <p>Nosotros</p>
+      </a>
+      <a (click)="sendSections('gallery')">
+        <p>Galeria</p>
+      </a>
+      <a (click)="sendSections('login')">
+        <p>Registrate</p>
+      </a>
+      <a href="https://www.instagram.com/deprimeraconsegunda/?hl=es" target="_blank"><i class="pi pi-instagram"
+          style="font-size: 2.5rem"></i></a>
     </div>
+    <hr>
   </div>
+  <p class="copyright-text" style="padding-bottom: 1%;">Copyright &copy; 2023 All Rights Reserved by
+    <a (click)="sendSections('home')">Andrea Adams</a>.
+  </p>
+  <!-- <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <p class="copyright-text" style="padding-bottom: 1%;">Copyright &copy; 2023 All Rights Reserved by
+          <a href="#">Andrea Adams</a>.
+        </p>
+
+        <ul class="social-icons" style="display: contents">
+          <li><a class="facebook" href="#home"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li></li>
+        </ul>
+
+      </div>
+    </div>
+  </div> -->
 </footer>

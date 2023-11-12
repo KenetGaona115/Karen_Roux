@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private element: ElementRef) { }
 
   ngOnInit() {
+  }
+
+  navigateToSection(section: any): void {
+    console.log(section);
+    const element = this.element.nativeElement.querySelector(`#${section}`);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
 }

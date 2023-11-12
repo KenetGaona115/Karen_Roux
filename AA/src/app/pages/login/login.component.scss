@@ -1,11 +1,9 @@
+.form-container {
+  padding-bottom: 5%;
+}
+
 form {
   height: 520px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.13);
-  // position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -88,6 +86,7 @@ button {
 }
 
 .form {
-  padding-left: 50%;
-  padding-top: 10%;
+  padding-left: 25%;
+  scroll-padding-bottom: 10%;
+  padding-right: 25%;
 }

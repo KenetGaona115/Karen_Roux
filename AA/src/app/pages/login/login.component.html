@@ -1,19 +1,21 @@
-<div class="form">
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <h3>{{isAdmin?'Iniciar sesion':'Registrate'}}</h3>
+<div class="form-container">
+  <div class="form">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <h3>{{isAdmin?'Iniciar sesion':'Registrate'}}</h3>
 
-    <label for="email">Correo</label>
-    <input id="email" type="text" formControlName="email" (onChange)="validateAdmin()" pInputText>
+      <label for="email">Correo</label>
+      <input id="email" type="text" formControlName="email" (onChange)="validateAdmin()" pInputText>
 
-    <div *ngIf="isAdmin">
-      <label for="password">Password</label>
-      <input type="password" formControlName="password" pPassword [feedback]="false">
-    </div>
+      <div *ngIf="isAdmin">
+        <label for="password">Password</label>
+        <input type="password" formControlName="password" pPassword [feedback]="false">
+      </div>
 
-    <button>{{isAdmin?'Iniciar sesion':'Registrate'}}</button>
-    <!-- <div class="social">
-      <div class="go"><i class="fab fa-google"></i> Google</div>
-      <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
-    </div> -->
-  </form>
+      <button>{{isAdmin?'Iniciar sesion':'Registrate'}}</button>
+      <!-- <div class="social">
+        <div class="go"><i class="fab fa-google"></i> Google</div>
+        <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+      </div> -->
+    </form>
+  </div>
 </div>
